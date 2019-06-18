@@ -1,0 +1,53 @@
+00-04      Used by Rotate12
+06         Tailpointer
+08         Action flags
+              0 = dots
+              1 = logo
+              2 = logofading
+              3 = rotation
+              4 = vectorflag
+              5 = floorflag
+              6 = fadeout
+
+10-14      Angles
+16         Logo-fade-value
+
+30-40      Segmentaddresses
+50         LastTime
+54         Time
+58         TimeDiff (word)
+60-64      PhongMap-coord
+70         AngleX1
+72         AngleY1
+74         AngleZ1
+76         AngleX2
+78         AngleY2
+80         AngleZ2
+
+
+Canvas     Sin[ 34 ]
+DataSeg1   Sin[ 36 ]    Stars
+DataSeg2   Sin[ 38 ]    PhongMap
+DataSeg3   Sin[ 40 ]    Vectorobject
+DataSeg4   Sin[ 42 ]    Z-buffer 1
+DataSeg5   Sin[ 44 ]    Z-buffer 2
+DataSeg6   Sin[ 46 ]    Glass-map
+
+
+Verticestructure :
+
+00     U
+02     V
+04     NVX
+06     NVY
+08     NVZ
+10     3D-X
+12     3D-Y
+14     3D-Z
+16     Z
+18     2D-X
+20     2D-Y
+total 22 bytes
+
+22 bytes each vertice
+6 bytes each face
